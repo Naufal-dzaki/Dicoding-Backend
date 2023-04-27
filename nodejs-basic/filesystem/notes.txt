@@ -1,0 +1,5 @@
+File System : 
+1. seluruh data di komputer dikelola dan diakses melalui filesystem
+2. ketika menjalankan javascript pada browser, sangat penting untuk melimitasi javascript
+3. teknik untuk melimitasi javascript disebut dengan sandboxing
+4. sandboxing berguna untuk melindungi dari program jahat, dan tindakan pencurian yang dapat merampas privasi pengguna
