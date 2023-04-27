@@ -1,0 +1,7 @@
+notes Readable Stream : 
+1. Teknik stream adalah teknik alternatif untuk membaca file.
+2. Teknik Readable Stream tidak membaca file sekaligus, namun membaca bagian demi bagian berdasakan ukuran buffernya
+3. untuk menggunakan teknik Readable Stream bisa menggunakan createReadStream() yang merupakan method dari core module fs
+4. Buffer di dalam stream adalah memori sementara yang digunakan oleh stream dalam menyimpan data hingga data tersebut dikonsumsi.
+5. createReadStream() mengembalikan EventEmitter, di mana kita dapat menetapkan fungsi listener setiap kali event readable dibangkitkan.
+6.  Event readable akan dibangkitkan ketika buffer sudah memiliki ukuran sesuai dengan nilai yang ditetapkan pada properti highWaterMark, dalam arti buffer sudah siap dibaca. Kemudian event end akan dibangkitkan setelah proses stream selesai.
