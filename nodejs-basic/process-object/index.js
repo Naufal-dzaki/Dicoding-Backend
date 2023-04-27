@@ -14,4 +14,4 @@ console.log(
   `penggunaan memory yang awalnya ${initialMemoryUsage} menjadi ${currentMemoryUsage} setelah terjadi looping`
 );
 
-//run on cmd : "node index.js parameter/name"
+//run on windows CMD : "SET NODE_ENV=development && node <path this file> <yourname / parameter>"
