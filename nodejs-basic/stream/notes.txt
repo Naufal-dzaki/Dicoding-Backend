@@ -1,7 +1,14 @@
-notes Readable Stream : 
+notes stream :
 1. Teknik stream adalah teknik alternatif untuk membaca file.
-2. Teknik Readable Stream tidak membaca file sekaligus, namun membaca bagian demi bagian berdasakan ukuran buffernya
-3. untuk menggunakan teknik Readable Stream bisa menggunakan createReadStream() yang merupakan method dari core module fs
-4. Buffer di dalam stream adalah memori sementara yang digunakan oleh stream dalam menyimpan data hingga data tersebut dikonsumsi.
-5. createReadStream() mengembalikan EventEmitter, di mana kita dapat menetapkan fungsi listener setiap kali event readable dibangkitkan.
-6.  Event readable akan dibangkitkan ketika buffer sudah memiliki ukuran sesuai dengan nilai yang ditetapkan pada properti highWaterMark, dalam arti buffer sudah siap dibaca. Kemudian event end akan dibangkitkan setelah proses stream selesai.
+2. Buffer di dalam stream adalah memori sementara yang digunakan oleh stream dalam menyimpan data hingga data tersebut dikonsumsi.
+
+notes Readable Stream : 
+1. Teknik Readable Stream tidak membaca file sekaligus, namun membaca bagian demi bagian berdasakan ukuran buffernya
+2. untuk menggunakan teknik Readable Stream bisa menggunakan createReadStream() yang merupakan method dari core module fs
+3. createReadStream() mengembalikan EventEmitter, di mana kita dapat menetapkan fungsi listener setiap kali event readable dibangkitkan.
+4. Event readable akan dibangkitkan ketika buffer sudah memiliki ukuran sesuai dengan nilai yang ditetapkan pada properti highWaterMark, dalam arti buffer sudah siap dibaca. Kemudian event end akan dibangkitkan setelah proses stream selesai.
+
+notes writeable stream :
+1. writeable stream adalah teknik untuk menulis berkas, dapat menggunakan method createWriteStream() dari core module fs
+2. fungsi pada createWriteStream memiliki satu argumen untuk menyimpan hasil data yang dituliskan
+3. berkas akan di buat secara otomatis jika tidak ada, dan jika berkas sudah ada maka isi dari berkas akan ditimpa

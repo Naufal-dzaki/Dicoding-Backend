@@ -1,0 +1,96 @@
+notes stream : 
+
+1. Teknik stre 
+am adalah tekni 
+k alternatif un 
+tuk membaca fil 
+e.
+2. Buffer d 
+i dalam stream  
+adalah memori s 
+ementara yang d 
+igunakan oleh s 
+tream dalam men 
+yimpan data hin 
+gga data terseb 
+ut dikonsumsi. 
+
+
+notes Readab 
+le Stream : 
+1 
+. Teknik Readab 
+le Stream tidak 
+ membaca file s 
+ekaligus, namun 
+ membaca bagian 
+ demi bagian be 
+rdasakan ukuran 
+ buffernya
+2.  
+untuk menggunak 
+an teknik Reada 
+ble Stream bisa 
+ menggunakan cr 
+eateReadStream( 
+) yang merupaka 
+n method dari c 
+ore module fs
+ 
+3. createReadSt 
+ream() mengemba 
+likan EventEmit 
+ter, di mana ki 
+ta dapat meneta 
+pkan fungsi lis 
+tener setiap ka 
+li event readab 
+le dibangkitkan 
+.
+4. Event rea 
+dable akan diba 
+ngkitkan ketika 
+ buffer sudah m 
+emiliki ukuran  
+sesuai dengan n 
+ilai yang ditet 
+apkan pada prop 
+erti highWaterM 
+ark, dalam arti 
+ buffer sudah s 
+iap dibaca. Kem 
+udian event end 
+ akan dibangkit 
+kan setelah pro 
+ses stream sele 
+sai.
+
+notes w 
+riteable stream 
+ :
+1. writeabl 
+e stream adalah 
+ teknik untuk m 
+enulis berkas,  
+dapat menggunak 
+an method creat 
+eWriteStream()  
+dari core modul 
+e fs
+2. fungsi 
+ pada createWri 
+teStream memili 
+ki satu argumen 
+ untuk menyimpa 
+n hasil data ya 
+ng dituliskan
+ 
+3. berkas akan  
+di buat secara  
+otomatis jika t 
+idak ada, dan j 
+ika berkas suda 
+h ada maka isi  
+dari berkas aka 
+n ditimpa 
+null 
