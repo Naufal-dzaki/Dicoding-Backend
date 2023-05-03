@@ -1,0 +1,6 @@
+Asynchronous and Synchronous
+notes : 
+ - proses synchronous adalah proses yang dijalankan berdasarkan sebuah urutan dan saling menunggu
+ - proses asynchronous adalah proses yang mennjalankan beberapa proses sekaligus 
+
+ # setTimeOut merupakan fungsi yang digunakan untuk menjadwalkan atau menunda pemmanggilan suatu kode sekaligus membuatnya berjalan secara asynchronous. setTimeOut memiliki 2 argumen, argumen pertama merupakan sebuah fungsi yang akan dipanggil secara terjadwal dan argumen kedua adalah delay waktu dalam satuan milisecond yang menentukan delay pemanggilan fungsi pada argumen pertama
