@@ -1,0 +1,10 @@
+notes : 
+ # Proses Testing berguna untuk melakukan kontrol kualitas dari kode yang kita tulis, memastikan software yang akan dipublikasikan ke pengguna minim adanya kecacatan atau bugs.
+ # jenis testing : 
+    - testing manual merupakan testing yang dilakukan oleh seseorang yang ditunjuk sebagai tester atau pengguna yang mendapat akses pre-relase untuk menguji usability, accessbility dari sebuah aplikasi
+    - testing otomatis merupakan testing yang dilakukan oleh komputer dengan menulis script khusus yang di lakukan oleh seorang QA Engineer, berkaitan dengan fungsionalitas dari sebauh aplikasi
+ # testing dibagi menjadi 4 : 
+    - static test -> memastikan tidak adanya typo (naming convention yang standar) dan memastikan tidak ada error types
+    - unit test -> memastikan setiap unit kode yang ditulis sesuai harapan.
+    - Integration test -> memastikan serangkaian fungsi yang saling ketergantungan berjalan semestinya.
+    - End-toEnd test -> menguji flow dari awal hingga akhir.
