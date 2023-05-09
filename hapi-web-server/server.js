@@ -8,6 +8,7 @@
  * optional path parameter hanya bisa digunakan pada akhir path saja -> /users/{username}/posts/{title?}
  * query parameter biasanya digunakan untuk filter -> /user?name=naufal&location=surabaya
  * kita mengambil query parameter dengan mengambil dari request.query
+ * ketika client memberikan body/payload request kita dapat memanggilnya menggunakan reqeust.payload -> const {username, password} = request.payload
  */
 const hapi = require("@hapi/hapi");
 const routes = require("./routes");
