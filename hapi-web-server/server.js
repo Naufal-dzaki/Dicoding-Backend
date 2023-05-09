@@ -6,6 +6,8 @@
  * untuk menggunakan path parameter pada hapi menggunakan '{}' -> /users/{username}
  * untuk menggunankan path parameter sebagai optional kita bisa menggunakan '?' -> /users/{username?}
  * optional path parameter hanya bisa digunakan pada akhir path saja -> /users/{username}/posts/{title?}
+ * query parameter biasanya digunakan untuk filter -> /user?name=naufal&location=surabaya
+ * kita mengambil query parameter dengan mengambil dari request.query
  */
 const hapi = require("@hapi/hapi");
 const routes = require("./routes");
